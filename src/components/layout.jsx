@@ -25,15 +25,10 @@ const GlobalStyle = createGlobalStyle`
       color: ${props => props.theme.ac} !important;
     }
   }
-  em {
-    font-style: normal;
-    font-weight: bold;
-    color: ${props => props.theme.em} !important;
+  strong {
+    color: ${props => props.theme.em};
   }
   ::selection {
-    background: ${props => props.theme.bd};
-  }
-  ::-moz-selection {
     background: ${props => props.theme.bd};
   }
 `;

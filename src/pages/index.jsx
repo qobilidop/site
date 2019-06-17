@@ -7,13 +7,13 @@ import { Nav, NavA } from "../components/nav";
 const IndexPage = () => (
   <CoverLayout>
     <h1>
-      Hi! I'm <em>Bili Dong</em>,
+      Hi! I'm <strong>Bili Dong</strong>,
     </h1>
     <p>
-      a <em>developer</em> at heart,
-      <br />a <em>research software engineer</em> by skill,
+      a <strong>developer</strong> at heart,
+      <br />a <strong>research software engineer</strong> by skill,
       <br />
-      and a <em>computational astrophysics researcher</em> in training.
+      and a <strong>computational astrophysics researcher</strong> in training.
     </p>
     <Nav style={{ "font-size": "3rem" }}>
       <NavA href="https://github.com/qobilidop">
