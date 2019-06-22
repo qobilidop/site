@@ -11,18 +11,8 @@ export const Nav = styled.nav`
 
 export const NavA = styled.a`
   padding: 0 0.25em;
-  text-decoration: none;
-  color: ${props => props.theme.fg};
-  :hover {
-    color: ${props => props.theme.ac};
-  }
 `;
 
 export const NavLink = styled(Link)`
   padding: 0 0.25em;
-  text-decoration: none;
-  color: ${props => props.theme.fg};
-  :hover {
-    color: ${props => props.theme.ac};
-  }
 `;

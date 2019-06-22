@@ -3,16 +3,39 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        plugins: [
+          {
+            // https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+        ],
+      }
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       }
-    }
+    },
   ],
-  siteMetadata: {
-    title: `Bili Dong`,
-    source: `https://github.com/qobilidop/site`,
-    description: `Hello world!`,
-    author: `Bili Dong`,
-  },
 }

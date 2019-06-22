@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 
 const BlogPage = () => (
   <Layout>
-    <h1>Contact</h1>
+    <h1 style={{ "text-align": "center" }}>comming soon </h1>
   </Layout>
 );
 
