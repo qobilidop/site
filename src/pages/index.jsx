@@ -8,36 +8,26 @@ const IndexPage = () => (
   <Layout>
     <Cover>
       <h1>
-        <div>
-          Hi! I'm <strong>Bili Dong</strong> <strong>董比立</strong>,
-        </div>
+        Hi! I'm <strong>Bili Dong</strong> <strong>董比立</strong>.
       </h1>
-      <p>
-        a <strong>developer</strong> at heart,
-        <br />a <strong>research software engineer</strong> by skill,
-        <br />
-        and a <strong>computational astrophysics researcher</strong> in
-        training.
-        <br />
-      </p>
-      <footer>
-        <h1>
-          <Nav>
-            <NavA href="https://github.com/qobilidop">
-              <FaGithub />
-            </NavA>
-            <NavA href="https://twitter.com/qobilidop">
-              <FaTwitter />
-            </NavA>
-            <NavA href="https://www.linkedin.com/in/qobilidop/">
-              <FaLinkedin />
-            </NavA>
-            <NavA href="mailto:qobilidop@gmail.com">
-              <FaEnvelope />
-            </NavA>
-          </Nav>
-        </h1>
-      </footer>
+      <h2>Software Engineer</h2>
+      <p>I'm a <strong>developer</strong> at heart. I would like to be a professional <strong>software engineer</strong> after getting my Ph.D. degree in <strong>computational astrophysics</strong> (hopefully in 2020). I have self-trained to be a <strong>research software engineer</strong> during graduate school by contributing to <strong>open source software</strong> projects mostly in the <strong>scientific Python</strong> world.</p>
+      <h1>
+        <Nav>
+          <NavA href="https://github.com/qobilidop">
+            <FaGithub />
+          </NavA>
+          <NavA href="https://twitter.com/qobilidop">
+            <FaTwitter />
+          </NavA>
+          <NavA href="https://www.linkedin.com/in/qobilidop/">
+            <FaLinkedin />
+          </NavA>
+          <NavA href="mailto:qobilidop@gmail.com">
+            <FaEnvelope />
+          </NavA>
+        </Nav>
+      </h1>
     </Cover>
   </Layout>
 );
