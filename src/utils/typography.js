@@ -39,9 +39,6 @@ const typography = new Typography({
     "a:hover": {
       textDecoration: `underline`
     },
-    "header a, footer a": {
-      color: "inherit"
-    },
     // border
     header: scale(1),
     footer: scale(-0.5)

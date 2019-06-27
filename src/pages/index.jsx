@@ -8,10 +8,10 @@ const IndexPage = () => (
   <Layout>
     <Cover>
       <h1>
-        Hi! I'm <strong>Bili Dong</strong> <strong>董比立</strong>.
+        Hi! I'm <strong>Bili Dong</strong>,
       </h1>
-      <h2>Software Engineer</h2>
-      <p>I'm a <strong>developer</strong> at heart. I would like to be a professional <strong>software engineer</strong> after getting my Ph.D. degree in <strong>computational astrophysics</strong> (hopefully in 2020). I have self-trained to be a <strong>research software engineer</strong> during graduate school by contributing to <strong>open source software</strong> projects mostly in the <strong>scientific Python</strong> world.</p>
+      <h2>a <strong>developer</strong>.</h2>
+      <p>I'm a <strong>developer</strong> at heart. I'm preparing to be a professional <strong>software engineer</strong> after getting my PhD degree in <strong>computational astrophysics</strong> (hopefully in 2020). I have self-trained to be a <strong>research software engineer</strong> during graduate school by contributing to <strong>open source software</strong> projects mostly in the <strong>Python scientific computing</strong> world.</p>
       <h1>
         <Nav>
           <NavA href="https://github.com/qobilidop">

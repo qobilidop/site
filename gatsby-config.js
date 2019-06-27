@@ -1,12 +1,16 @@
 module.exports = {
+  siteMetadata: {
+    title: `qobilidop`,
+    url: `https://www.qobilidop.dev`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `content`,
       },
     },
     {
