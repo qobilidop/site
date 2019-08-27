@@ -24,26 +24,24 @@ const Page = styled.div`
   align-items: center;
 `;
 
-const HeaderBanner = styled.header`
+const Banner = styled.div`
   grid-column-start: 1;
   grid-column-end: -1;
+  width: 100%;
+  height: 100%;
+  background: ${theme.color.hightlight};
+  background-blend-mode: normal;
+  z-index: 1;
+`
+
+const HeaderBanner = styled(Banner)`
   grid-row-start: 1;
   grid-row-end: 2;
-  width: 100%;
-  height: 100%;
-  background: ${theme.color.hightlight};
-  z-index: 1;
-`;
+`
 
-const FooterBanner = styled.header`
-  grid-column-start: 1;
-  grid-column-end: -1;
+const FooterBanner = styled(Banner)`
   grid-row-start: -2;
   grid-row-end: -1;
-  width: 100%;
-  height: 100%;
-  background: ${theme.color.hightlight};
-  z-index: 1;
 `;
 
 const Header = styled.header`
@@ -73,6 +71,10 @@ const Footer = styled.footer`
   z-index: 2;
   text-align: center;
   ${muteLink}
+  p {
+    margin: 0;
+    font-size: inherit;
+  }
 `;
 
 const Layout = ({ children }) => {
@@ -115,14 +117,12 @@ const Layout = ({ children }) => {
             <NavLink to="/">{data.site.siteMetadata.title}</NavLink>
           </Nav>
           <Nav>
-            <NavLink to="/about">About</NavLink>
             <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
           </Nav>
         </Header>
         <Main>{children}</Main>
         <Footer>
-          <a href="https://github.com/qobilidop/site">&copy; {new Date().getFullYear()} Bili Dong</a>
+          <p>&copy; {new Date().getFullYear()} <a href="https://www.qobilidop.dev">Bili Dong</a> | <a href="https://github.com/qobilidop/site">Source on GitHub</a></p>
         </Footer>
         <FooterBanner />
       </Page>
@@ -131,8 +131,9 @@ const Layout = ({ children }) => {
 }
 
 export const Cover = styled.div`
-  width: 100%;
+  max-width: 640px;
   height: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

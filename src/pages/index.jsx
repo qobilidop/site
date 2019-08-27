@@ -10,8 +10,7 @@ const IndexPage = () => (
       <h1>
         Hi! I'm <strong>Bili Dong</strong>,
       </h1>
-      <h2>a <strong>developer</strong>.</h2>
-      <p>I'm a <strong>developer</strong> at heart. I'm preparing to be a professional <strong>software engineer</strong> after getting my PhD degree in <strong>computational astrophysics</strong> (hopefully in 2020). I have self-trained to be a <strong>research software engineer</strong> during graduate school by contributing to <strong>open source software</strong> projects mostly in the <strong>Python scientific computing</strong> world.</p>
+      <h2>an aspiring <strong>developer</strong>.</h2>
       <h1>
         <Nav>
           <NavA href="https://github.com/qobilidop">

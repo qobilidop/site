@@ -1,9 +1,13 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Layout, { Cover } from "../components/layout";
 
-export default () => (
+const BlogPage = () => (
   <Layout>
-    <h1>404</h1>
+    <Cover>
+      <h1>404</h1>
+    </Cover>
   </Layout>
 );
+
+export default BlogPage;

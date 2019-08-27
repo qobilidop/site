@@ -21,10 +21,10 @@ const typography = new Typography({
     body: {
       background: theme.color.background
     },
-    "::-moz-selection": {
+    "::selection": {
       background: theme.color.hightlight
     },
-    "::selection": {
+    "::-moz-selection": {
       background: theme.color.hightlight
     },
     "h1, h2, h3, h4, h5, h6": {
