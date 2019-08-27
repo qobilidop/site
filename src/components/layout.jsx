@@ -99,14 +99,14 @@ const Layout = ({ children }) => {
             type: "image/png",
             sizes: "16x16",
             href:
-              "http://gravatar.com/avatar/086d1990cca231600eed04b18d6ee726.png?s=16"
+              "https://gravatar.com/avatar/086d1990cca231600eed04b18d6ee726.png?s=16"
           },
           {
             rel: "icon",
             type: "image/png",
             sizes: "32x32",
             href:
-              "http://gravatar.com/avatar/086d1990cca231600eed04b18d6ee726.png?s=32"
+              "https://gravatar.com/avatar/086d1990cca231600eed04b18d6ee726.png?s=32"
           }
         ]}
       />
