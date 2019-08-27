@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout, { TextColumn } from "../components/layout";
+import Layout, { TextColumn, Cover } from "../components/layout";
 import { Nav } from "../components/nav";
 
 class BlogIndex extends React.Component {
@@ -11,26 +11,31 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout>
-        <TextColumn>
-          {posts.map(({ node }) => {
-            return (
-              <div key={node.fields.slug}>
-                <Nav>
-                  <h3>
-                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-                  </h3>
-                  <p>{node.frontmatter.date}</p>
-                </Nav>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.excerpt
-                  }}
-                />
-              </div>
-            );
-          })}
-        </TextColumn>
+        <Cover>
+          <h1>Under construction</h1>
+        </Cover>
       </Layout>
+      // <Layout>
+      //   <TextColumn>
+      //     {posts.map(({ node }) => {
+      //       return (
+      //         <div key={node.fields.slug}>
+      //           <Nav>
+      //             <h3>
+      //               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+      //             </h3>
+      //             <p>{node.frontmatter.date}</p>
+      //           </Nav>
+      //           <p
+      //             dangerouslySetInnerHTML={{
+      //               __html: node.excerpt
+      //             }}
+      //           />
+      //         </div>
+      //       );
+      //     })}
+      //   </TextColumn>
+      // </Layout>
     );
   }
 }
