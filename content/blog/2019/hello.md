@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: 2019-09-01
+status: draft
 ---
 
 Finally I've made my personal site and blog. Let me talk about the tech stack adopted, and the rationales behind it as the first post.

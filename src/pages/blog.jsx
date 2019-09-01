@@ -11,31 +11,26 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout>
-        <Cover>
-          <h1>Under construction</h1>
-        </Cover>
+        <TextColumn>
+          {posts.map(({ node }) => {
+            return (
+              <div key={node.fields.slug}>
+                <Nav>
+                  <h3>
+                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                  </h3>
+                  <p>{node.frontmatter.date}</p>
+                </Nav>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.excerpt
+                  }}
+                />
+              </div>
+            );
+          })}
+        </TextColumn>
       </Layout>
-      // <Layout>
-      //   <TextColumn>
-      //     {posts.map(({ node }) => {
-      //       return (
-      //         <div key={node.fields.slug}>
-      //           <Nav>
-      //             <h3>
-      //               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-      //             </h3>
-      //             <p>{node.frontmatter.date}</p>
-      //           </Nav>
-      //           <p
-      //             dangerouslySetInnerHTML={{
-      //               __html: node.excerpt
-      //             }}
-      //           />
-      //         </div>
-      //       );
-      //     })}
-      //   </TextColumn>
-      // </Layout>
     );
   }
 }
@@ -44,7 +39,15 @@ export default BlogIndex;
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: {glob: "**/blog/**"},
+        frontmatter: {status: {eq: "publish"}}
+      },
+      sort: {
+        fields: [frontmatter___date], order: DESC
+      }
+    ) {
       edges {
         node {
           excerpt
@@ -54,6 +57,7 @@ export const query = graphql`
           frontmatter {
             date(formatString: "YYYY-MM-DD")
             title
+            status
           }
         }
       }
