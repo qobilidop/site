@@ -10,7 +10,7 @@ const IndexPage = () => (
       <h1>
         Hi! I'm <strong>Bili Dong</strong>,
       </h1>
-      <h2>an aspiring <strong>developer</strong>.</h2>
+      <h2>an aspiring <strong>software engineer</strong>.</h2>
       <h1>
         <Nav>
           <NavA href="https://github.com/qobilidop">
