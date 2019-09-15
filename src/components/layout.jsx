@@ -117,8 +117,7 @@ const Layout = ({ children }) => {
             <NavLink to="/">{data.site.siteMetadata.title}</NavLink>
           </Nav>
           <Nav>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
+            {/* <NavLink to="/blog">Blog</NavLink> */}
           </Nav>
         </Header>
         <Main>{children}</Main>
